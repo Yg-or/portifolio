@@ -56,6 +56,7 @@ const mystyle = {
 function Home(){
     return(
         <div style={mystyle.tudo}>
+            <title>Ygor</title>
             <div style={mystyle.all}>
                 <img src="https://media-exp1.licdn.com/dms/image/C5603AQF5GgUfdmTtkw/profile-displayphoto-shrink_400_400/0/1601997833426?e=1620864000&v=beta&t=frT0oQvT2uvGptF39yM4wGyJdWi1FaAE98-3Uucq0HY" alt="Minha Figura" style={mystyle.img}/>
                 
