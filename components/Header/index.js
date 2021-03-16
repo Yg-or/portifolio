@@ -27,7 +27,7 @@ function Header(){
             <div style={styles.header}>
                 <div style={styles.logo}>
                     <img
-                    src={logo}
+                    src="https://github.com/Yg-or/portifolio/blob/main/components/img/logo.png"
                     style={styles.imgLogo}
                     alt="Logo"
                     />
