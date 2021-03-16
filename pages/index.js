@@ -63,7 +63,7 @@ function Home(){
             </div>
             <h1 style={mystyle.nome}>Ygor Lage</h1>
             <a href="https://www.instagram.com/inygu/" target="_blank"><button style={mystyle.novo}>Instagram</button></a>
-            <a href="https://github.com/Yg-or" target="_blank"><button style={mystyle.novo}>GitHup</button></a>
+            <a href="https://github.com/Yg-or" target="_blank"><button style={mystyle.novo}>GitHub</button></a>
             <a href="https://www.linkedin.com/in/ygor-lage-da-costa-silva-a5183b1ab/" target="_blank"><button style={mystyle.novo}>Linkedin</button></a>
             <a href="https://api.whatsapp.com/send?phone=5522988011635" target="_blank"><button style={mystyle.novo}>Whatsapp</button></a>
 
