@@ -8,7 +8,9 @@ const styles = {
         width: '100%',
         margin: -10,
         display: 'flex',
-        flexDirection: 'row'
+        flexDirection: 'row',
+        borderBottomWidth: 1,
+        borderBottomStyle: 'solid'
     },
     logo:{
         height: '100%',
@@ -19,7 +21,18 @@ const styles = {
         justifyContent: 'center',
         alignItems: 'center',
         padding: 10
-    }
+    },
+    novo:{
+        backgroundColor: "#FFF",
+        color: "white",
+        fontSize: 20,
+        width: 320,
+        height: 40,
+        borderRadius: 20,
+        margin: "10px 0px",
+        cursor: "pointer",
+        
+    },
     
   };
 
@@ -35,7 +48,7 @@ function Header(){
                     />
                 </div>
                 <div style={styles.menu}>
-                    direita
+                    <button style={styles.novo}>Instagram</button>
                 </div>
                 
 
