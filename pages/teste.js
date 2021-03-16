@@ -23,6 +23,9 @@ const styles = {
     logo:{
         height: '100%',
         width: '20%'
+    },
+    body:{
+        height: 1200
     }
     
   };
@@ -31,6 +34,9 @@ function Teste(){
     return(
         <div style={styles.tudo}>
             <Header/>
+            <div style={styles.body}>
+                a
+            </div>
 
 
             

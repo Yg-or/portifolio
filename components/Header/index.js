@@ -15,7 +15,10 @@ const styles = {
         width: '20%'
     },
     imgLogo:{
-        height: 100
+        height: '90%',        
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: 10
     }
     
   };
