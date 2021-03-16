@@ -35,7 +35,7 @@ function Teste(){
         <div style={styles.tudo}>
             <Header/>
             <div style={styles.body}>
-                a
+                
             </div>
 
 
