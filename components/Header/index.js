@@ -25,7 +25,11 @@ function Header(){
         
             <div style={styles.header}>
                 <div style={styles.logo}>
-                    
+                    <img
+                    src="https://github.com/Yg-or/portifolio/blob/main/components/img/logo.png?raw=true"
+                    style={styles.imgLogo}
+                    alt="Logo"
+                    />
                 </div>
                 <div style={styles.menu}>
                     direita
