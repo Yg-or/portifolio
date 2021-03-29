@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Yg-or/portifolio#readme",
   "dependencies": {
+    "flatlist-react": "^1.5.0",
     "next": "^10.0.8",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
