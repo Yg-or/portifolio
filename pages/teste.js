@@ -75,7 +75,7 @@ class App extends Component{
                 {filmes.map(filme=>( 
                     <div style={styles.card}>
                         <div style={styles.areaBandeira}>
-                            <img src={`https://www.countryflags.io/${filmes.ISO2}/flat/64.png`} style={styles.bandeira} />
+                            <img src={``} style={styles.bandeira} />
                         </div>
                         <div style={styles.titulo}>País: {filme.Country}</div>
                         <div style={styles.slug}>País: {filme.Slug}</div>
