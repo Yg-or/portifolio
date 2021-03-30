@@ -6,7 +6,7 @@ const styles = {
 
     },
     card:{
-        height: 100,
+        height: 300,
         width: 250,
         backgroundColor: '#f00',
         margin: 20,
@@ -16,6 +16,17 @@ const styles = {
     },
     titulo:{
         backgroundColor: '#0f0'
+    },
+    areaBandeira:{
+        height: '50%',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    bandeira:{
+        height: 100,
+        width: 100,
+        borderRadius: 50
     }
     
 
@@ -35,7 +46,13 @@ class App extends Component{
         const covid = await fetch(`https://api.covid19api.com/countries`);
         const dados = await covid.json();
         this.setState({ filmes: dados });
+        console.log(dados)
         
+    }
+
+    redirecionar(dado){
+        const link = `/api/country/${dado}`;
+        window.location.href = link;
     }
 
 
@@ -55,15 +72,18 @@ class App extends Component{
             <div style={styles.total}>
                 
                 <h1>Teste</h1>
-                {filmes.map(filme=>(   
-                      
-                                   
+                {filmes.map(filme=>( 
                     <div style={styles.card}>
+                        <div style={styles.areaBandeira}>
+                            <img src={`https://www.countryflags.io/${filmes.ISO2}/flat/64.png`} style={styles.bandeira} />
+                        </div>
                         <div style={styles.titulo}>País: {filme.Country}</div>
                         <div style={styles.slug}>País: {filme.Slug}</div>
                         
                         
-                        <a href={`https://api.covid19api.com/country/brazil/status/confirmed?from=2020-03-01T00:00:00Z&to=2020-04-01T00:00:00Z`}><button>{filme.Country}</button></a>
+                        <button onClick={()=>{this.redirecionar(filme.Slug)}}>
+                            {filme.Country}
+                        </button>
                         
                         
                     
