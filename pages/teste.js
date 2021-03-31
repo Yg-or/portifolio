@@ -1,13 +1,12 @@
-import React, { Component} from 'react';
-import {Button} from 'react';
+import React, { Component, useState} from 'react';
 
 const styles = {
     total:{
-
+        
     },
     card:{
         height: 300,
-        width: 250,
+        width: 350,
         backgroundColor: '#f00',
         margin: 20,
         borderRadius: 10,
@@ -27,6 +26,10 @@ const styles = {
         height: 100,
         width: 100,
         borderRadius: 50
+    },
+    lista:{
+        display: 'flex',
+        flexDirection: 'row'
     }
     
 
@@ -37,10 +40,9 @@ const styles = {
 
 
 class App extends Component{
-    state = {
-        filmes:[],
-        pais: ''
-    }
+    
+
+    
 
     async componentDidMount(){
         const covid = await fetch(`https://api.covid19api.com/countries`);
@@ -65,13 +67,14 @@ class App extends Component{
 
     
     render(){
-        const {filmes} = this.state;
+        
 
 
         return(
             <div style={styles.total}>
                 
                 <h1>Teste</h1>
+                <div style={styles.lista}>
                 {filmes.map(filme=>( 
                     <div style={styles.card}>
                         <div style={styles.areaBandeira}>
@@ -91,6 +94,9 @@ class App extends Component{
                     
                     </div>
                 ))}
+                </div>
+
+
                 
                 
                 
