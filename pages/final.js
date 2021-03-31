@@ -85,7 +85,6 @@ class Home extends Component{
     
 
     componentDidMount() {
-        console.log(window.innerHeight);
         const alt = window.innerHeight;
         const larg = window.innerWidth;
         const sup = alt * 0.35;
@@ -114,6 +113,7 @@ class Home extends Component{
 
         return(
             <div style={styles.tudo}>
+                <title>Ygor</title>
                 <div style={styles.esquerda, {height: this.state.height, marginRight: 20}}>
                 <div style={styles.esquerdaSuperior, {height: this.state.alturaSuperior, backgroundColor: '#dadada', borderRadius: 20, justifyContent: 'center', alignItems: 'center', display: 'flex', width: this.state.alturaSuperior, flexDirection: 'column'}}>
                 <div style={styles.all}>
