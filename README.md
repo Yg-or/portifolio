@@ -1,1 +1,2 @@
-# Projeto para a criação de um portifólio
+# Portifólio
+Site criado com React e Next.js hospedado na vercel
