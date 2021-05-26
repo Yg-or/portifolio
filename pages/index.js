@@ -63,7 +63,7 @@ function Home(){
         <div style={mystyle.tudo}>
             <title>Ygor</title>
             <div style={mystyle.all}>
-                <img src="https://media-exp1.licdn.com/dms/image/C5603AQF5GgUfdmTtkw/profile-displayphoto-shrink_400_400/0/1601997833426?e=1620864000&v=beta&t=frT0oQvT2uvGptF39yM4wGyJdWi1FaAE98-3Uucq0HY" alt="Minha Figura" style={mystyle.img}/>
+                <img src="https://media-exp1.licdn.com/dms/image/C5603AQF5GgUfdmTtkw/profile-displayphoto-shrink_200_200/0/1601997833426?e=1627516800&v=beta&t=Xpc1TT971-prLd2cee1fPhj0733SqWDJ2RpSlam13x8" alt="Minha Figura" style={mystyle.img}/>
                 
             </div>
             <h1 style={mystyle.nome}>Ygor Lage</h1>
